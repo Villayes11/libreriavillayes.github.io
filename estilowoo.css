@@ -1,0 +1,256 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans'; /* Establece la fuente predeterminada para todos los elementos */
+}
+
+header{
+    background: burlywood; /* Establece el color de fondo del encabezado */
+    background-size: cover; /* Hace que la imagen de fondo se ajuste al tamaño del encabezado */
+    background-position: center; /* Centra la imagen de fondo en el encabezado */
+    height: 110px; /* Establece la altura del encabezado */
+}
+
+header h1{
+    text-align: center; /* Centra el texto dentro del encabezado */
+    background-position: center; /* Centra el texto dentro del encabezado */
+    font-size: 45px; /* Establece el tamaño de fuente del título del encabezado */
+    font-family: Tw Cen MT; /* Establece la fuente para el título del encabezado */
+
+    color: #ffffff; /* Establece el color de texto del título del encabezado */
+    padding: 30px 0; /* Establece el relleno superior e inferior del título del encabezado */
+}
+
+.contenedor{
+    max-width: 1500px; /* Establece el ancho máximo del contenedor */
+    padding: 20px; /* Establece el espacio interno del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente en la página */
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    text-align: center; /* Centra el contenido del contenedor horizontalmente */
+    justify-content: space-between; /* Distribuye el contenido del contenedor de manera uniforme en el eje horizontal */
+    background-color: #f0cbab; /* Establece el color de fondo del contenedor */
+
+    /* oculto lo que queda fuera del .contenedor */
+    contain: paint; /* Propiedad que especifica cómo se limita el contenido del contenedor para evitar que se pinte fuera de él */
+}
+
+.contenedor .headerj1{
+    text-align: center; /* Centra el texto dentro del elemento .headerj1 */
+}
+
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor .contenedor-items{
+    margin-top: 10px; /* Establece un margen superior de 10px para el contenedor de elementos */
+    display: grid; /* Establece el contenedor como una cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Define las columnas de la cuadrícula, con un ancho mínimo de 220px y máximo de 1fr (espacio disponible) */
+    grid-gap: 30px; /* Establece el espacio entre las celdas de la cuadrícula */
+    grid-row-gap: 30px; /* Establece el espacio vertical entre las celdas de la cuadrícula */
+    width: 100%; /* Establece el ancho del contenedor de elementos al 100% del contenedor padre */
+    text-align: center; /* Centra el contenido de los elementos dentro del contenedor */
+
+    background-image: url(https://media.vozpopuli.com/2021/05/20/pexels-stanislav-kondratiev-2908984-e1621504407504-1568x882.jpg); /* Establece una imagen de fondo para el contenedor */
+    transition: .5s; /* Aplica una transición suave de 0.5 segundos para cambios de estilo */
+
+}
+
+.contenedor .contenedor-items .item{
+    max-width: 300px; /* Establece el ancho máximo para los elementos dentro del contenedor */
+    margin: auto; /* Centra horizontalmente los elementos dentro del contenedor */
+    border: 1px solid #410404; /* Establece un borde sólido con un color específico */
+    border-radius: 0px; /* Establece el radio de las esquinas del borde */
+    padding: 20px; /* Establece el espacio interno de los elementos */
+    transition: .5s; /* Aplica una transición suave de 0.5 segundos para cambios de estilo */
+
+    background-color:rgb(207, 148, 100) ; /* Establece el color de fondo de los elementos */
+    color: #000000; /* Establece el color del texto de los elementos */
+}
+
+.contenedor .contenedor-items .item .img-item{
+    width: 100%; /* Establece el ancho al 100% para la imagen dentro del elemento */
+
+}
+
+.contenedor .contenedor-items .item:hover{
+    box-shadow: 0 0 10px #fff7f7; /* Agrega una sombra al elemento cuando se pasa el cursor sobre él */
+    scale: 1.05; /* Aplica una escala de 1.05 al elemento cuando se pasa el cursor sobre él */
+}
+
+.contenedor .contenedor-items .item .titulo-item{
+    display: block; /* Cambia el elemento a un bloque para que ocupe todo el ancho disponible */
+    font-weight: bold; /* Establece un peso de fuente en negrita para el título */
+    text-align: center; /* Centra el texto del título dentro del elemento */
+    text-transform: uppercase; /* Convierte el texto del título a mayúsculas */
+}
+
+.contenedor .contenedor-items .item .precio-item{
+    display: block; /* Cambia el elemento a un bloque para que ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto del precio dentro del elemento */
+    font-weight: bold; /* Establece un peso de fuente en negrita para el precio */
+    font-size: 22px; /* Establece un tamaño de fuente de 22px para el precio */
+}
+
+.contenedor .contenedor-items .item .boton-item{
+    display: block; /* Cambia el elemento a un bloque para que ocupe todo el ancho disponible */
+    margin: 10px auto; /* Establece un margen vertical de 10px y un margen horizontal automático para centrar el botón */
+    border: none; /* Elimina el borde del botón */
+    background-color: rgb(255, 255, 255); /* Establece un color de fondo blanco para el botón */
+    color: #000000; /* Establece un color de texto negro para el botón */
+    padding: 5px 15px; /* Establece un relleno de 5px en la parte superior e inferior y 15px en los lados del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas al botón con un radio de 5px */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima del botón */
+}
+
+/* seccion carrito */
+.carrito{
+    border: 1px solid #000000; /* Establece un borde de 1px sólido de color negro alrededor del carrito */
+    width: 35%; /* Establece un ancho del 35% del contenedor padre para el carrito */
+    margin-top: 30px; /* Establece un margen superior de 30px para separar el carrito de otros elementos */
+    border-radius: 5px; /* Agrega esquinas redondeadas al carrito con un radio de 5px */
+    overflow: hidden; /* Oculta el contenido que se desborda del carrito */
+    margin-bottom: auto; /* Establece el margen inferior automático para ajustar el espacio restante */
+    position: sticky !important; /* Establece la posición pegajosa del carrito para que permanezca visible mientras se desplaza */
+    top: 0; /* Fija el carrito en la parte superior */
+    transition: .3s; /* Agrega una transición suave de 0.3 segundos para animaciones */
+    /* Estilos para ocultar */
+    margin-right: -100%; /* Desplaza el carrito fuera del contenedor padre hacia la izquierda en un 100% del ancho */
+    opacity: 0; /* Establece la opacidad del carrito a 0 para ocultarlo */
+}
+
+.carrito .header-carrito{
+    background-color: #ffffff; /* Establece un color de fondo blanco para el encabezado del carrito */
+    color: #000000; /* Establece un color de texto negro para el encabezado del carrito */
+    text-align: center; /* Centra el texto del encabezado del carrito */
+    padding: 30px 0; /* Establece un relleno de 30px en la parte superior e inferior del encabezado del carrito */
+}
+
+.carrito .carrito-item{
+    display: flex; /* Establece el modo de visualización como flex para alinear los elementos internos */
+    align-items: center; /* Alinea verticalmente los elementos internos en el centro */
+    /* justify-content: space-between; */ /* Comentado: quitar el espacio entre los elementos internos */
+    position: relative; /* Establece la posición relativa para el elemento del carrito */
+    border-bottom: 1px solid #fff3f3; /* Agrega una línea de borde inferior de 1px sólido de color #fff3f3 */
+    padding: 20px; /* Establece un relleno de 20px en todos los lados del elemento del carrito */
+}
+
+.carrito .carrito-item img{
+    margin-right: 20px; /* Establece un margen derecho de 20px para separar la imagen del elemento del carrito */
+}
+
+.carrito .carrito-item .carrito-item-titulo{
+    display: block; /* Establece el elemento de título del carrito como un elemento en bloque */
+    font-weight: bold; /* Establece el peso de la fuente en negrita para el título del carrito */
+    margin-bottom: 10px; /* Establece un margen inferior de 10px para separar el título del carrito */
+    text-transform: uppercase; /* Transforma el texto del título del carrito a mayúsculas */
+}
+
+.carrito .carrito-item .selector-cantidad{
+    display: inline-block; /* Establece el elemento del selector de cantidad como un elemento en línea */
+    margin-right: 25px; /* Establece un margen derecho de 25px para separar el selector de cantidad de otros elementos */
+}
+
+.carrito .carrito-item .carrito-item-cantidad{
+    border: none; /* Elimina el borde del elemento de cantidad del carrito */
+    font-size: 18px; /* Establece el tamaño de fuente en 18px para el elemento de cantidad del carrito */
+    background-color: transparent; /* Establece el fondo transparente para el elemento de cantidad del carrito */
+    display: inline-block; /* Establece el elemento de cantidad del carrito como un elemento en línea */
+    width: 30px; /* Establece un ancho de 30px para el elemento de cantidad del carrito */
+    padding: 5px; /* Establece un relleno de 5px en todos los lados del elemento de cantidad del carrito */
+    text-align: center; /* Centra el texto dentro del elemento de cantidad del carrito */
+}
+
+.carrito .carrito-item .selector-cantidad i{
+    font-size: 18px; /* Establece el tamaño de fuente en 18px para el icono del selector de cantidad */
+    width: 32px; /* Establece un ancho de 32px para el icono del selector de cantidad */
+    height: 32px; /* Establece una altura de 32px para el icono del selector de cantidad */
+    line-height: 32px; /* Establece la altura de línea de 32px para el icono del selector de cantidad */
+    text-align: center; /* Centra el contenido del icono del selector de cantidad */
+    border-radius: 50%; /* Establece un borde redondeado para el icono del selector de cantidad */
+    border: 1px solid #000; /* Establece un borde de 1px sólido de color negro para el icono del selector de cantidad */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del icono del selector de cantidad */
+}
+
+.carrito .carrito-item .carrito-item-precio{
+    font-weight: bold; /* Establece el peso de fuente en negrita para el precio del elemento del carrito */
+    display: inline-block; /* Establece el precio del elemento del carrito como un elemento en línea */
+    font-size: 18px; /* Establece el tamaño de fuente en 18px para el precio del elemento del carrito */
+    margin-bottom: 5px; /* Establece un margen inferior de 5px para separar el precio del elemento del carrito de otros elementos */
+}
+
+.carrito .carrito-item .btn-eliminar{
+    position: absolute; /* Establece la posición absoluta para el botón de eliminar */
+    right: 15px; /* Alinea el botón de eliminar a la derecha con un margen de 15px desde el borde derecho */
+    top: 15px; /* Alinea el botón de eliminar en la parte superior con un margen de 15px desde el borde superior */
+    color: #000; /* Establece el color de texto en negro para el botón de eliminar */
+    font-size: 20px; /* Establece el tamaño de fuente en 20px para el botón de eliminar */
+    width: 40px; /* Establece un ancho de 40px para el botón de eliminar */
+    height: 40px; /* Establece una altura de 40px para el botón de eliminar */
+    line-height: 40px; /* Establece la altura de línea de 40px para el botón de eliminar */
+    text-align: center; /* Centra el contenido del botón de eliminar */
+    border-radius: 50%; /* Establece un borde redondeado para el botón de eliminar */
+    border: 1px solid #000; /* Establece un borde de 1px sólido de color negro para el botón de eliminar */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del botón de eliminar */
+    display: block; /* Establece el botón de eliminar como un elemento en bloque */
+    background: transparent; /* Establece el fondo del botón de eliminar como transparente */
+    z-index: 20; /* Establece el índice de apilamiento en 20 para asegurarse de que el botón de eliminar esté por encima de otros elementos */
+}
+
+.carrito .carrito-item .btn-eliminar i{
+    pointer-events: none; /* Desactiva los eventos del puntero en el icono dentro del botón de eliminar */
+}
+
+
+.carrito-total{
+    background-color: #ffffff; /* Establece el color de fondo en blanco para el área total del carrito */
+    padding: 30px; /* Establece un relleno de 30px alrededor del área total del carrito */
+}
+
+.carrito-total .fila{
+    display: flex; /* Aplica un diseño flexible a la fila para que los elementos se distribuyan horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos de la fila equitativamente, dejando espacio entre ellos */
+    align-items: center; /* Alinea verticalmente los elementos de la fila al centro */
+    font-size: 22px; /* Establece el tamaño de fuente en 22px para los elementos de la fila */
+    font-weight: bold; /* Establece un peso de fuente en negrita para los elementos de la fila */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px a la fila */
+}
+
+.carrito-total .btn-pagar{
+    display: block; /* Establece el elemento como bloque para que ocupe todo el ancho disponible */
+    width: 100%; /* Establece el ancho al 100% para que se ajuste al contenedor */
+    border: none; /* Elimina el borde */
+    background: #000; /* Establece el color de fondo en negro */
+    color: #fff; /* Establece el color del texto en blanco */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    font-size: 18px; /* Establece el tamaño de fuente en 18px */
+    padding: 20px; /* Agrega un relleno de 20px alrededor del botón */
+    display: flex; /* Aplica un diseño flexible para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente equitativamente */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima del botón */
+    transition: .3s; /* Agrega una transición suave de 0.3 segundos */
+}
+
+.carrito-total .btn-pagar:hover{
+    scale: 1.05; /* Aplica un efecto de escala al botón al pasar el cursor por encima */
+}
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 850px) {
+    /* Cambia el display del contenedor a bloque */
+    .contenedor {
+        display: block;
+    }
+    
+    /* Establece el ancho del contenedor de elementos al 100% del ancho disponible */
+    .contenedor-items {
+        width: 100% !important;
+    }
+    
+    /* Establece el ancho del carrito al 100% del ancho disponible */
+    .carrito {
+        width: 100%;
+    }
+}
+
+
